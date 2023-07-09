@@ -1,4 +1,4 @@
-
+from funciones_matematicas import *
 """import funciones_matematicas
 funciones_matematicas.sumar(3,2)
 funciones_matematicas.restar(5,5)

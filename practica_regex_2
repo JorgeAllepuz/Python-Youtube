@@ -1,0 +1,24 @@
+import re
+
+lista_nombres=['Ana Gómez', 'María Martín', 'Sandra López', 'Santiago Martín', 'Jorge Allepuz', 'Jordi Sanchez', 'niños', 'niñas', 'camion', 'camión']
+
+for elemento in lista_nombres:
+    #if re.findall("^San", elemento): # ^ acento circunflejo para buscar coincidencias al inicio
+    #if re.findall("Martín$", elemento): # $ dolar para buscar coincidencias al final
+    #if re.findall("[ó]", elemento): # [] corchetes para buscar coincidencias en cualquier parte del texto
+    #if re.findall("niñ[oa]s", elemento): # [] corchetes para buscar coincidencias en o o en a en este caso niñ@s
+    #if re.findall("cami[oó]n", elemento): # [] corchetes para buscar coincidencias en o o en ó
+    if re.findall("[o-t]", elemento): # [] corchetes para buscar rangos entre letras,^empiezan, $terminan, o solo corchetes contienen 
+
+        print(elemento)
+
+ciudades=['Ma1', 'Se1', 'Ma2', 'Ba1', 'Ma3', 'Va1', 'Va2', 'Ma4', 'MaA', 'Ma5', 'MaB', 'MaC']
+
+for ciudad in ciudades:
+    #if re.findall("Ma[^0-3]", ciudad): # encuentra Madrid de 0 a 3, si añadimos ^ excluye de 0 a 3
+    if re.findall("Ma[0-3A-B]", ciudad): # encuentra Madrid de 0 a 3, si añadimos ^ excluye de 0 a 3
+
+
+        print(ciudad)
+
+
